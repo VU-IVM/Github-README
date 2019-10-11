@@ -23,3 +23,9 @@ git push -u origin master \
 Pushes the changes in your local repository up to the remote repository you specified as origin \
 After you have run git push -u origin master, it will automaticallly push your next updates to the origin if you only write: \
 git push
+
+
+# Connect your assignment to Binder:
+Binder builds a (python) environment with all its dependencies 'in the cloud'. Although it is not perfectly stable, it avoids set-up time when installing python locally.
+
+https://mybinder.org/
