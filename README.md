@@ -1,6 +1,6 @@
 # VU-IVM-README 
 
-Here we explain how you can 'connect' your repository to the VU-IVM page. \
+Here we explain how you can connect your repository to the VU-IVM page. \
 
 ## Option 1: Connect an existing local repository 
 
