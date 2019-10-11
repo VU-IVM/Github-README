@@ -28,4 +28,10 @@ git push
 # Connect your assignment to Binder:
 Binder builds a (python) environment with all its dependencies 'in the cloud'. Although it is not perfectly stable, it avoids set-up time when installing python locally.
 
-https://mybinder.org/
+https://mybinder.org/ \
+Fill in you Git-URL: \
+https://github.com/VU-IVM/{your_repo_name}.git \
+the branch you want to publish: \
+generally the master branch
+Copy the Binder badge into your readme:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/VU-IVM/{your_repo_name}.git/master)
