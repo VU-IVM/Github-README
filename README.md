@@ -1,4 +1,4 @@
-# VU-IVM-README 
+# VU-IVM Github README 
 
 Here we explain how you can connect your repository to the VU-IVM page. \
 
