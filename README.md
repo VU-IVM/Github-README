@@ -8,6 +8,19 @@ Once you are part of the VU-IVM Github institution: \
 Go to personal github repo \
 Click on Fork (upper right of page), then you should see the organization which you are linked to. \
 
+Generally forked repos are used to collaborate with other people on the same package. There is an original repo, and there are forked repos which can add features and request to merge the new features into the original repo (pull request, original <- forked). Choosing this option 1 means that other collaborators will still need to fork from your original repo and not from the already forked one. I'm honestly not really sure what is the best way to go, input is welcome! \
+
+Anywho, to keep a forked repo up to date with the original, you have to clone the forked repo to your local machine. Then add the remote branch of the original repo: \
+git remote add original https://github.com/{user-name}/{repo-name}.git \
+Now you have two remote branch: \
+git remote -v
+To pull the most recent updates from the original repo: \
+git pull original master \
+To push these updates to the forked repo on the IVM Github: \
+git push origin master
+
+
+
 ## Option 2: Connect an existing local repository 
 
 git init \
