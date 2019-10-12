@@ -31,7 +31,7 @@ After you have run git push -u origin master, it will automaticallly push your n
 git push
 
 
-# Connect your assignment to Binder:
+# Connect your practicum assignment to Binder:
 Binder builds a (python) environment with all its dependencies 'in the cloud'. Although it is not perfectly stable, it avoids set-up time when installing python locally.
 
 https://mybinder.org/ \
