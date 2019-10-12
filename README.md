@@ -3,10 +3,10 @@
 Here we explain how you can connect your repository to the VU-IVM page. \
 
 ## Option 1: Fork your existing Github repository
-Become a member, send an email to one of the repo maintainers (e.g. sem.vijverberg@vu.nl)
-Once you are part of the VU-IVM Github institution:
-Go to personal github repo
-Click on Fork (upper right of page), then you should see the organization which you are linked to.
+Become a member, send an email to one of the repo maintainers (e.g. sem.vijverberg@vu.nl). \
+Once you are part of the VU-IVM Github institution: \
+Go to personal github repo \
+Click on Fork (upper right of page), then you should see the organization which you are linked to. \
 
 ## Option 2: Connect an existing local repository 
 
