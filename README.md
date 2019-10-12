@@ -2,26 +2,22 @@
 
 Here we explain how you can connect your repository to the VU-IVM page. \
 
-## Option 1: Fork your existing Github repository
-Become a member, send an email to one of the repo maintainers (e.g. sem.vijverberg@vu.nl). \
-Once you are part of the VU-IVM Github institution: \
-Go to personal github repo \
-Click on Fork (upper right of page), then you should see the organization which you are linked to. \
-
-Generally forked repos are used to collaborate with other people on the same package. There is an original repo, and there are forked repos which can add features and request to merge the new features into the original repo (pull request, original <- forked). Choosing this option 1 means that other collaborators will still need to fork from your original repo and not from the already forked one. I'm honestly not really sure what is the best way to go, input is welcome! \
-
-Anywho, to keep a forked repo up to date with the original, you have to clone the forked repo to your local machine. Then add the remote branch of the original repo: \
-git remote add original https://github.com/{user-name}/{repo-name}.git \
-Now you have two remote branch: \
-git remote -v
-To pull the most recent updates from the original repo: \
-git pull original master \
-To push these updates to the forked repo on the IVM Github: \
-git push origin master
+## Option 1: Connect an existing local Github repository 
+Preferably, I would like to have one single version online. The only way to do this is perhaps to Transfer ownership (which I find a bit scary). \
+What I did now is create a new empty VU-IVM repo, via: \
+Go to https://github.com/VU-IVM \
+Click New (green icon, on the right of VU-IVM Github page) \
+Fill in Repository name \
+Add description (optional) \
+Do not initialized the repo \
+Copy the Github-link, .e.g. https://github.com/VU-IVM/{your_repo_name}.git \
+Now you can connect you local folder (that is already connected to a github repository) to the new IVM remote. \
+git remote add IVM https://github.com/VU-IVM/{your_repo_name}.git \
+git remote -v # verifies the new remote URL \
+git push IVM master \
 
 
-
-## Option 2: Connect an existing local repository 
+## Option 2: Connect an existing non-Github local repository 
 
 git init \
 git add . \
@@ -33,14 +29,16 @@ Click New (green icon, on the right of VU-IVM Github page) \
 Fill in Repository name \
 Add description (optional) \
 Optional to Initialize this repository with a README. \
-If you initialized a repo, click on the green Clone or Download button and copy the Github-link, if not, you enter a webpage with more detailed instruction how to set up you repo. \
-You only have to copy the Github-link, .e.g. https://github.com/VU-IVM/{your_repo_name}.git \
+If you initialized a repo, click on the green Clone or Download button and copy the Github-link. \
+if you do not Initialize the repo, just the empty folder is created. \
+You enter a webpage with more detailed instruction how to set up you repo. \
+Copy the Github-link, .e.g. https://github.com/VU-IVM/{your_repo_name}.git \
 Now you can connect you local folder to the remote repository. \
 git remote add origin https://github.com/VU-IVM/{your_repo_name}.git \
 git remote -v # verifies the new remote URL \
 git push -u origin master \
 Pushes the changes in your local repository up to the remote repository you specified as origin \
-After you have run git push -u origin master, it will automaticallly push your next updates to the origin if you only write: \
+After you have run git push -u origin master, the -u flag ensures that it will automaticallly push your next updates to the origin if you only write: \
 git push
 
 
