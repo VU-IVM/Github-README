@@ -14,6 +14,13 @@ Copy the Github-link, .e.g. https://github.com/VU-IVM/{your_repo_name}.git \
 Now you can connect you local folder (that is already connected to a github repository) to the new IVM remote. \
 git remote add IVM https://github.com/VU-IVM/{your_repo_name}.git \
 git remote -v # verifies the new remote URL \
+
+Add .gitignore (optional) \
+touch .gitignore \
+vi .gitignore (enters terminal-based text editor, press i to insert text, esc to exit text editing mode, once out of text editing mode :w to write, :q to quit) \
+e.g. to avoid pushing a folder called Answers \
+press i type Anwsers/ press esc type :wq (to write and quit). \
+
 git push IVM master \
 
 
