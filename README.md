@@ -28,7 +28,7 @@ git push IVM master \
 
 git init \
 git add . \
-git commit -m "First commit” \
+git commit -m "First commit" \
 git branch -v # verifies the new local branch \ 
 *Now you have a local branch called master, now we also need to connect the local version control to a remote URL. \
 Go to https://github.com/VU-IVM \
